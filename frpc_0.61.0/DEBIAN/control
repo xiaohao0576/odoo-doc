@@ -1,0 +1,9 @@
+Package: frpc
+Version: 0.61.0
+Architecture: amd64
+Section: net
+Priority: optional
+Maintainer: Your Name <frp@example.com>
+Description: frp client for Linux
+ A fast reverse proxy client to help you expose a local server
+ behind a NAT or firewall to the Internet.

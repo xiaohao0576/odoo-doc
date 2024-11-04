@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+
+# 设置权限
+chmod 755 /usr/local/bin/frpc
+chmod 644 /etc/frp/frpc.toml
+chmod 644 /etc/systemd/system/frpc.service
+
+# 重载systemd
+systemctl daemon-reload
+
+# 启用并启动服务
+systemctl enable frpc
+systemctl start frpc
